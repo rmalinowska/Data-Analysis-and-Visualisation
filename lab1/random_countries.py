@@ -6,6 +6,7 @@ from matplotlib.animation import FuncAnimation
 import seaborn as sns
 import pandas as pd
 import numpy as np
+import random
 
 def filter_countries(countries_file, population_file):
     countries = pd.read_csv(countries_file)
@@ -14,9 +15,10 @@ def filter_countries(countries_file, population_file):
     populations = populations[populations["Country Name"].isin(countries)]
     return populations
 
-def get_most_populated(df, number):
-    df = df.sort_values(by=['2021'], ascending = False)
-    return df.iloc[0:5,:]
+def get_random(df, number):
+    sample = random.sample(range(0, df.shape[0]-1), number)
+    df = df.iloc[sample, :]
+    return df
 
 def animation(df):
     names = list(df["Country Name"])
@@ -28,53 +30,33 @@ def animation(df):
     max_population = max([max(country) for country in data])
     fig = plt.figure(figsize=(8,6))
     axes = fig.add_subplot(1,1,1)
-    axes.set_ylim(0, max_population + max_population*0.1)
     palette = list(reversed(sns.color_palette("bright", 5).as_hex()))
-    y1, y2, y3, y4, y5 = [], [], [], [], []
-    L=plt.legend(loc=1)
     def animate(i):
+        
+        axes.set_ylim(0, max_population + max_population*0.1)
         y1=data[0][i]
         y2=data[1][i]
         y3=data[2][i]
         y4=data[3][i]
         y5=data[4][i]
     
-        bars = plt.bar(range(5), sorted([y1, y2, y3, y4, y5]),color=palette, label=str(1960+i))
+        plt.bar(range(5), [y1, y2, y3, y4, y5],color=palette)
+        for t in axes.texts:
+            t.set_visible(False)
+        axes.text(0, y1, 1960+i, color="grey", fontsize = 16)
         tickdic = {names[0]:y1, names[1]:y2, names[2]:y3, names[3]:y4, names[4]:y5}
-        sorted_tickdic = sorted(tickdic.items(), key=lambda x: x[1])
-        tcks = [i[0] for i in sorted_tickdic]
+        tcks = [i for i in tickdic]
         plt.xticks(np.arange(5), tcks)
         
 
     plt.title("Population by year")
     plt.ylabel("Population size [mln]")
-    plt.xlabel("Five most populated countries.")
+    plt.xlabel("Five random countries.")
     anim = FuncAnimation(fig, animate, frames = len(data[0])-1, interval = 1)
     plt.show()
 
     return data
 
-
 filtered_df = filter_countries("countries.csv", "populations.csv")
-df_top5 = get_most_populated(filtered_df, 5)
-animation(df_top5)
-
-# fig = plt.figure(figsize=(8,6))
-# axes = fig.add_subplot(1,1,1)
-# axes.set_ylim(0, 150)
-
-# lst1=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ]
-# lst2=[0, 5, 10, 15, 20, 25, 30, 35, 40, 50, 60, 70, 80, 90, 100]
-
-# palette = list(reversed(sns.color_palette("seismic", 2).as_hex()))
-
-# y1, y2, = [], []
-# def animate(i):
-#     y1=lst1[i]
-#     y2=lst2[i]
-    
-#     plt.bar(["one", "two"], [y1,y2], color=palette)
-
-# plt.title("Some Title, Year: {} ".format(5000), color=("blue"))
-# ani = FuncAnimation(fig, animate, interval=100)
-# plt.show()
+df_random = get_random(filtered_df, 5)
+animation(df_random)
