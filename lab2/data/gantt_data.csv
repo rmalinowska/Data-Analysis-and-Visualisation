@@ -1,0 +1,32 @@
+Category,Caption,Start,End,days_to_start,days_to_end,task_duration,centers
+term,winter term,2023-10-01,2024-02-18,0,140,141,1
+term,summer term,2024-02-19,2024-09-30,141,365,225,142
+classes,block I,2023-10-02,2023-10-29,1,28,28,2
+deadline,linkage deletion request,2023-10-20,2023-10-20,19,19,1,20
+classes,block II,2023-10-30,2023-12-03,29,63,35,30
+linkage,linkage time,2023-10-01,2024-02-18,0,140,141,1
+classes,block III,2023-12-04,2023-12-21,64,81,18,65
+holiday,winter break,2023-12-22,2024-01-07,82,98,17,83
+classes,block III,2024-01-08,2024-01-28,99,119,21,100
+deadline,resignation from completing the course,2024-01-19,2024-01-19,110,110,1,111
+exams,winter exams,2024-01-29,2024-02-11,120,133,14,121
+language exams,language certification exams,2024-01-29,2024-01-30,120,121,2,121
+holiday,intersemester break,2024-02-12,2024-02-18,134,140,7,135
+term,summer term,2024-02-19,2024-09-30,141,365,225,142
+classes,block I,2024-02-19,2024-03-17,141,168,28,142
+exams,re-take winter exams,2024-02-23,2024-03-03,145,154,10,146
+language exams,B2 english exams,2024-02-24,2024-02-24,146,146,1,147
+decisions,completing winter semester decisions,2024-03-04,2024-03-31,155,182,28,156
+deadline,linkage deletion request,2024-03-15,2024-03-15,166,166,1,167
+classes,block II,2024-03-18,2024-04-28,169,210,42,170
+holiday,spring break,2024-03-28,2024-04-02,179,184,6,180
+classes,block III,2024-04-29,2024-06-16,211,259,49,212
+holiday,holiday,2024-05-02,2024-05-02,214,214,1,215
+holiday,holiday,2024-05-31,2024-06-02,243,245,3,244
+deadline,resignation from completing the course,2024-06-01,2024-06-01,244,244,1,245
+linkage,linkage time,2024-06-01,2024-09-30,244,365,122,245
+exams,summer exams,2024-06-17,2024-07-07,260,280,21,261
+language exams,language certification exams,2024-06-17,2024-06-18,260,261,2,261
+holiday,summer break,2024-07-08,2024-09-30,281,365,85,282
+exams,re-take summer exams,2024-09-02,2024-09-15,337,350,14,338
+decisions,completing whole year decisions,2024-09-16,2024-09-30,351,365,15,352
