@@ -41,7 +41,7 @@
 <img src="lab2/plots/bar_pause.gif">
 
 <h2>Gantt plot in color.</h2>
-<img src="lab2/plots/gantt_col.png" width="800">
+<img src="lab2/plots/gantt_col.png" width="1000">
 
 <h2>Gantt plot in black and white.</h2>
-<img src="lab2/plots/gantt_bw.png" width="800">
+<img src="lab2/plots/gantt_bw.png" width="1000">
