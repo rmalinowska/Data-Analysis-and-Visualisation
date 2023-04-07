@@ -1,19 +1,18 @@
 
 <h1>Task1</h1>
 <h2>Animated bar plots for 5 most populated countries.</h2>
-![Alt Text](plots/bar_top_col.gif)
-<img src="plots/bar_top_col.gif">
-<img src="plots/bar_top_bw.gif">
+<img src="lab2/plots/bar_top_col.gif">
+<img src="lab2/plots/bar_top_bw.gif">
 <h2>Animated bar plots for 5 countries with Poland as the centroid.</h2>
-<img src="plots/bar_pol_col.gif">
-<img src="plots/bar_pol_bw.gif">
+<img src="lab2/plots/bar_pol_col.gif">
+<img src="lab2/plots/bar_pol_bw.gif">
 <h2>Animated bar plots for 5 random countries.</h2>
-<img src="plots/bar_random_col.gif">
-<img src="plots/bar_random_bw.gif">
+<img src="lab2/plots/bar_random_col.gif">
+<img src="lab2/plots/bar_random_bw.gif">
 
 <h1>Task2</h1>
 <h2>Animated line plot for 5 most populated countries.</h2>
-<img src="plots/line_top.gif">
+<img src="lab2/plots/line_top.gif">
 <h2>Animated line plot for 5 countries with Poland as the centroid.</h2>
 <img src="plots/line_pol.gif">
 <h2>Animated line plot for 5 random countries.</h2>
