@@ -1,12 +1,7 @@
-<!doctype html>
-<html>
-<head>
-<title>DAV_lab2</title>
-<meta name="keywords" content="lab2 homework DAV">
-</head>
-<body>
+
 <h1>Task1</h1>
 <h2>Animated bar plots for 5 most populated countries.</h2>
+![Alt Text](plots/bar_top_col.gif)
 <img src="plots/bar_top_col.gif">
 <img src="plots/bar_top_bw.gif">
 <h2>Animated bar plots for 5 countries with Poland as the centroid.</h2>
@@ -51,6 +46,3 @@
 
 <h2>Gantt plot in black and white.</h2>
 <img src="plots/gantt_bw.png" height="800">
-
-</body>
-</html>
