@@ -45,3 +45,11 @@
 
 <h2>Gantt plot in black and white.</h2>
 <img src="lab2/plots/gantt_bw.png" width="1000">
+
+<h2>Some plots from labs 4-6.</h2>
+<img src="lab4-6/plots/task2d.png">
+<img src="lab4-6/plots/task3b.png">
+<img src="lab4-6/plots/task3c.png">
+<img src="lab4-6/plots/task5b.png">
+<img src="lab4-6/plots/task5d.png">
+<img src="lab4-6/plots/task5e.png">
